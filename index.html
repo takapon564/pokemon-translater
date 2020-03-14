@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Transfer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <h5>
+        翻訳したいポケモンの名前をカタカナで入力してね！
+        </h5>
+        <p>
+          <input type="text" v-model="message">
+        </p>
+        
+        <p>検索結果</p>
+        <p>
+        {{ result }}
+        </p>
+        
+        <button v-on:click="translate()">
+        翻訳
+        </button>
+         
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
